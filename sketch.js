@@ -24,12 +24,12 @@ function preload(){
 
 function setup(){
   // to create the canvas
-  createCanvas(500,500);
+  createCanvas(600,600);
   
   // creating sword
   sword = createSprite(200,200,10,10);
   sword.addImage(swordImage);
-  sword.scale = 0.5;
+  sword.scale = 0.8;
   
   // set a collider for sword
   sword.setCollider("circle", 0,0,20);
@@ -42,7 +42,7 @@ function setup(){
 
 function draw(){
   // adding the background
-  background("lightblue");
+  background("lightgreen");
   
   if(gameState === PLAY){
     
